@@ -1,0 +1,72 @@
+String check = "2";
+
+  Console.WriteLine("你ㄉ名字????");
+  String name = Console.ReadLine();
+  Console.WriteLine("你ㄉ性別4?  (1)男ㄉ (2)女ㄉ ");
+  String gender = Console.ReadLine();
+  Console.WriteLine("生日快樂4哪天?");
+  String birthday = Console.ReadLine();
+  Console.WriteLine("學號勒?");
+  String ID = Console.ReadLine();
+
+  if(gender == "1")
+  {
+      gender = "男ㄉ";
+  }
+  else if(gender == "2")
+  {
+      gender = "女ㄉ";
+  }
+
+while (check == "2")
+{
+  Console.WriteLine(" `*-.,.-*``*-.,.-*``*-.,.-*``*-.,.-*``*-.,.-*``*-.,.-*``*-.,.-*``*-.,.-* ");
+
+  Console.WriteLine("你ㄉ名：" + name);
+  Console.WriteLine("你ㄉ性別：" + gender);
+  Console.WriteLine("生日快樂：" + birthday);
+  Console.WriteLine("你ㄉ學號：" + ID);
+
+  Console.WriteLine("資料有沒有對ㄚ! (1)有ㄉ棒棒棒 (2)沒餒 有東東要改改 (3)全部都不對啦 ");
+  check = Console.ReadLine();
+
+  if(check == "2")
+  {
+     Console.WriteLine("阿你哪ㄍ填錯");
+     Console.WriteLine("(1)名ㄗ (2)性別 (3)生日day (4)學號");
+     String change = Console.ReadLine();
+
+     switch(change)
+     {
+        case "1":
+         Console.WriteLine("你ㄉ名字????");
+         name = Console.ReadLine();
+         break;
+        case "2":
+         Console.WriteLine("你ㄉ性別4?  (1)男ㄉ (2)女ㄉ ");
+         gender = Console.ReadLine();
+         break;
+        case "3":
+         Console.WriteLine("生日快樂4哪天?");
+         birthday = Console.ReadLine();
+         break;
+        case "4":
+         Console.WriteLine("學號勒?");
+         ID = Console.ReadLine();
+         break;
+     }
+  }
+  else if(check == "3")
+  {
+      Console.WriteLine("你ㄉ名字????");
+      name = Console.ReadLine();
+      Console.WriteLine("你ㄉ性別4?  (1)男ㄉ (2)女ㄉ ");
+      gender = Console.ReadLine();
+      Console.WriteLine("生日快樂4哪天?");
+      birthday = Console.ReadLine();
+      Console.WriteLine("學號勒?");
+      ID = Console.ReadLine();
+      check = "2";
+  }
+}
+Console.WriteLine("~ ~ 好ㄟ已完成建置 ~ ~");
